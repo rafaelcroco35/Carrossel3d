@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background-image: url(https://e0.pxfuel.com/wallpapers/314/495/desktop-wallpaper-mcdonalds-3d-logo-red-brickwall-creative-brands-mcdonalds-logo-3d-art-mcdonalds.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #faebd7;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.600);
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    font-weight: 30%;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 1px #000000;
+    margin-bottom: 20px;
+    
+}
+
+.container{
+    text-transform: uppercase;
+    text-shadow: 3px 3px 1px #000000;
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style:  preserve-3d;
+    animation: rotate360 25s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 280px;
+    height: 150px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .4);
+    display: flex;
+    border: #faebd7 solid;
+}
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://www.stockvault.net/data/2009/10/11/111084/preview16.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.imagem:nth-child(2) {
+    background-image: url(https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2022/03/80-2.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3) {
+    background-image: url(https://www.chefmeat.com.br/blog/wp-content/uploads/2018/07/Hamburguer-Costela.png);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4) {
+    background-image: url(https://www.stockvault.net/data/2012/05/19/131006/preview16.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5) {
+    background-image: url(https://img.cybercook.com.br/receitas/289/molho-big-mac.jpeg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://maringa.cidadecancao.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/e/cebola-kg-0000000028455.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://www.cozinhadamarcia.com.br/wp-content/uploads/2013/01/F_pickles.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8) {
+    background-image: url(https://www.stockvault.net/data/2018/12/15/257488/preview16.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9) {
+    background-image: url(https://jasminealimentos.com/wp-content/uploads/2017/04/pao-com-gergelim-1.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+    text-align: center;
+    margin-top: 585px;
+    padding: 5px 0 10px 0;
+    font-size: 70%;
+    background-color: rgba(0, 0, 0, 0.600);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
